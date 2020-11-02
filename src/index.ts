@@ -1,4 +1,7 @@
+import { config } from 'dotenv'
 import { server } from './server'
+
+config()
 
 const port = parseInt(process.env.PORT || '') || 3000
 
